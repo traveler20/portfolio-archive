@@ -1,4 +1,11 @@
+/* ──────────────────────────────
+ * reset css
+ ────────────────────────────── */
 @import "https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css";
+
+body {
+	line-height: 1.6;
+}
 
 /* ──────────────────────────────
  * .header
@@ -82,10 +89,38 @@
 /* ──────────────────────────────
  * .cta
  ────────────────────────────── */
+.cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .cta_copy {
 	font-size: 18px;
 	font-weight: bold;
-	margin: 48px 0 16px;
+	margin: 48px auto 24px;
+
+	position: relative;
+	display: inline-block;
+	padding: 0 40px;
+}
+.cta_copy:before,
+.cta_copy:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 32px;
+	height: 2px;
+	background-color: #333;
+}
+.cta_copy:before {
+	left: 0;
+	transform: rotate(60deg);
+}
+.cta_copy:after {
+	right: 0;
+	transform: rotate(-60deg);
 }
 .cta_button {
 	display: inline-block;
