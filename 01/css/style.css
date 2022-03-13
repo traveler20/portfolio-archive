@@ -32,7 +32,7 @@ body {
 	background-color: #60caad;
 	border: solid 2px #60caad;
 	border-radius: 4px;
-	padding: 14px;
+	padding: 8px 14px;
 	transition: 0.4s;
 }
 .header_button:hover {
@@ -80,7 +80,7 @@ body {
 .section_title {
 	font-size: 28px;
 	font-weight: bold;
-	padding: 0 0 32px;
+	margin: 0 0 32px;
 }
 .section_copy {
 	font-size: 18px;

@@ -32,7 +32,7 @@ body {
 	background-color: #60caad;
 	border: solid 2px #60caad;
 	border-radius: 4px;
-	padding: 14px;
+	padding: 8px 14px;
 	transition: 0.4s;
 }
 .header_button:hover {
@@ -45,13 +45,27 @@ body {
   ────────────────────────────── */
 .fv {
 	min-height: 500px;
-	background-color: #efefef;
+	background-color: rgba(239, 239, 239, 0.8);
 	text-align: center;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	position: relative;
 }
+.fv:before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	bottom: -5px;
+	left: -5px;
+	right: -5px;
+	background-image: url(./../img/fv-bg.jpg);
+	background-size: cover;
+	z-index: -1;
+}
+
 .fv_title {
 	font-size: 36px;
 	font-weight: bold;
@@ -80,7 +94,22 @@ body {
 .section_title {
 	font-size: 28px;
 	font-weight: bold;
-	padding: 0 0 32px;
+
+	position: relative;
+	display: inline-block;
+	margin: 0 0 32px;
+}
+.section_title:before {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	display: inline-block;
+	width: 64px;
+	height: 4px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #60caad;
+	border-radius: 2px;
 }
 .section_copy {
 	font-size: 18px;
