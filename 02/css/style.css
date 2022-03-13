@@ -56,7 +56,7 @@
 	background-color: #f9f9f9;
 }
 .section_inner {
-	min-width: 1200px;
+	max-width: 1200px;
 	text-align: center;
 }
 .section_title {
