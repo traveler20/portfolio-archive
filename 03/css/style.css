@@ -257,3 +257,10 @@ textarea.contact_input {
 	color: #563c11;
 	background-color: transparent;
 }
+
+/* ──────────────────────────────
+  * utility
+  ────────────────────────────── */
+.inline-block {
+	display: inline-block;
+}
