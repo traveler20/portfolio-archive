@@ -3,11 +3,15 @@
  ────────────────────────────── */
 @import "https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css";
 
+/* Google Font   */
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&display=swap");
+
 /* Google Font Icons  */
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 html {
 	scroll-behavior: smooth;
+	font-family: "Kaisei HarunoUmi", serif;
 }
 body {
 	line-height: 1.6;
@@ -40,11 +44,11 @@ button {
 	font-size: 20px;
 	font-weight: bold;
 }
-.header_lists {
+.header_nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 16px;
+	gap: 8px;
 }
 .header_link {
 	text-decoration: underline;
@@ -151,11 +155,12 @@ button {
 }
 
 .fv_title {
-	font-size: 36px;
+	font-size: 44px;
 	font-weight: bold;
 }
 .fv_copy {
 	font-size: 24px;
+	letter-spacing: 0.7px;
 	margin: 16px 0 0;
 }
 
@@ -164,6 +169,7 @@ button {
   ────────────────────────────── */
 .menu_lists {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	gap: 32px;
@@ -236,7 +242,8 @@ textarea.contact_input {
 	border: solid 2px #563c11;
 	border-radius: 2px;
 	padding: 8px 16px;
-	min-width: 320px;
+	width: 320px;
+	max-width: 100%;
 	text-decoration: none;
 	position: relative;
 }
