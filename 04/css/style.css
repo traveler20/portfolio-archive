@@ -99,6 +99,33 @@ button {
 }
 
 /* ──────────────────────────────
+  * .cta
+  ────────────────────────────── */
+.cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cta_button {
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #f99f48;
+	border: solid 2px #f99f48;
+	border-radius: 4px;
+	/* width: 260px;
+	max-width: 40%; */
+	padding: 6px 20px;
+}
+.cta_button:hover {
+	color: #f99f48;
+	background-color: transparent;
+}
+
+/* ──────────────────────────────
   * .fv
   ────────────────────────────── */
 .fv {
@@ -160,7 +187,6 @@ button {
 /* ──────────────────────────────
   * .contact
   ────────────────────────────── */
-
 .contact_form {
 	text-align: left;
 	max-width: 600px;
@@ -234,33 +260,6 @@ textarea.contact_input {
 }
 .contact_button:hover {
 	color: #563c11;
-	background-color: transparent;
-}
-
-/* ──────────────────────────────
-  * .cta
-  ────────────────────────────── */
-.cta {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.cta_button {
-	text-align: center;
-	display: inline-block;
-	font-size: 18px;
-	font-weight: bold;
-	color: #fff;
-	background-color: #f99f48;
-	border: solid 2px #f99f48;
-	border-radius: 4px;
-	/* width: 260px;
-	max-width: 40%; */
-	padding: 6px 20px;
-}
-.cta_button:hover {
-	color: #f99f48;
 	background-color: transparent;
 }
 
