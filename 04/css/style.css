@@ -36,8 +36,11 @@ button {
 	align-items: center;
 }
 .header_logo {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
+}
+.header_cta {
+	width: 130px;
 }
 
 /* ──────────────────────────────
@@ -76,7 +79,7 @@ button {
   * .section
   ────────────────────────────── */
 .section {
-	padding: 72px 0 80px;
+	padding: 72px 16px;
 	background-color: #fff;
 }
 .section:nth-of-type(odd) {
@@ -85,7 +88,6 @@ button {
 .section_inner {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 16px;
 	text-align: center;
 }
 .section_title {
@@ -116,9 +118,9 @@ button {
 	background-color: #f99f48;
 	border: solid 2px #f99f48;
 	border-radius: 4px;
-	/* width: 260px;
-	max-width: 40%; */
-	padding: 6px 20px;
+	width: 260px;
+	max-width: 100%;
+	padding: 6px 8px;
 }
 .cta_button:hover {
 	color: #f99f48;
@@ -130,7 +132,8 @@ button {
   ────────────────────────────── */
 .fv {
 	min-height: 500px;
-	background-color: rgba(51, 51, 51, 0.7);
+	padding: 16px;
+	background-color: #1659c6;
 	text-align: center;
 
 	display: flex;
@@ -173,7 +176,7 @@ button {
 	font-size: 32px;
 }
 .fv_titleText {
-	font-size: 40px;
+	font-size: 36px;
 }
 .fv_copy {
 	font-size: 18px;
@@ -191,12 +194,14 @@ button {
 	text-align: left;
 	max-width: 600px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 .contact_item {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-bottom: 20px;
 }
 .contact_label,
 .contact_input {
@@ -215,7 +220,7 @@ button {
 	border-radius: 4px;
 }
 .contact_input:focus-visible {
-	outline: #563c11 auto 1px;
+	outline: #1659c6 auto 1px;
 }
 
 textarea.contact_input {
@@ -228,7 +233,7 @@ textarea.contact_input {
 	right: 32px;
 
 	color: #fff;
-	background-color: #563c11;
+	background-color: #f99f48;
 	border-radius: 2px;
 	padding: 5px 5px;
 	margin: 0 0 0 18px;
@@ -238,34 +243,13 @@ textarea.contact_input {
 	text-align: center;
 	margin-top: 36px;
 }
-.contact_button {
-	display: inline-block;
-	font-size: 14px;
-	font-weight: bold;
-	color: #fff;
-	background-color: #563c11;
-	border: solid 2px #563c11;
-	border-radius: 2px;
-	padding: 8px 16px;
-	width: 320px;
-	max-width: 100%;
-	text-decoration: none;
-	position: relative;
-}
-.contact_button:after {
-	position: absolute;
-	right: 24px;
-	content: "\e5e1";
-	font-family: "Material Icons";
-}
-.contact_button:hover {
-	color: #563c11;
-	background-color: transparent;
-}
 
 /* ──────────────────────────────
   * utility
   ────────────────────────────── */
 .inline-block {
 	display: inline-block;
+}
+.pb-0 {
+	padding-bottom: 0;
 }
