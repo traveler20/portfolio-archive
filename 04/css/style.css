@@ -3,9 +3,6 @@
  ────────────────────────────── */
 @import "https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css";
 
-/* Google Font Icons  */
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-
 html {
 	scroll-behavior: smooth;
 }
