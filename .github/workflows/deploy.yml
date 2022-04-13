@@ -19,7 +19,7 @@ jobs:
           FTP_USERNAME: ${{ secrets.TEST_FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.TEST_FTP_PASSWORD }}
           LOCAL_DIR: ./
-          REMOTE_DIR: /public_html/github-action-test/
+          REMOTE_DIR: /public_html/traveler20.site/github-action-test/
   production:
     name: Upload Production
     runs-on: ubuntu-latest
@@ -32,4 +32,4 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           LOCAL_DIR: ./
-          REMOTE_DIR: /public_html/github-action-test/
+          REMOTE_DIR: /public_html/yurukei-career.com/github-action-test/
