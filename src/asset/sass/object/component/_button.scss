@@ -1,0 +1,48 @@
+/* c-button
+--------------------------- */
+@use "./../../foundation/system" as s;
+
+.c-button {
+	text-align: center;
+
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 3px 56px;
+	color: s.$c-base;
+	background-color: s.$c-body;
+	border: solid 1px s.$c-body;
+	border-radius: 50px;
+	width: clamp(270px, 80%, 400px);
+
+	transition: s.$transition-base;
+
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: -24px;
+		transform: translateY(-50%);
+		width: 56px;
+		height: 2px;
+		background-color: s.$c-accent;
+		transition: 0.4s;
+	}
+	&:after {
+		width: 0;
+	}
+	&:hover {
+		color: s.$c-body;
+		background-color: transparent;
+		text-decoration: none;
+		&:before {
+			right: -32px;
+		}
+	}
+
+	@include s.breakpoint(tablet) {
+	}
+	@include s.breakpoint(pc) {
+	}
+}

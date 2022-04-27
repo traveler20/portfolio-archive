@@ -1,0 +1,181 @@
+/* p-work
+--------------------------- */
+@use "./../../foundation/system" as s;
+
+.p-work {
+	&__lists {
+		display: flex;
+		// flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 16px;
+		width: 100%;
+		margin: 0 0 52px 0;
+		overflow-x: scroll;
+		&::-webkit-scrollbar {
+			height: 8px;
+		}
+		&::-webkit-scrollbar-track {
+			background: s.$c-body;
+			border: none;
+			border-radius: 10px;
+			box-shadow: inset 0 0 1px s.$c-base-right;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: s.$c-base-right;
+			border-radius: 10px;
+			box-shadow: none;
+		}
+	}
+	&__list {
+		flex: 0 0 40%;
+		margin-bottom: 18px;
+	}
+
+	&__figure {
+		position: relative;
+		&:hover .p-work__figcaption {
+			opacity: 1;
+			padding-top: 13%;
+		}
+	}
+	&__figcaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		opacity: 0;
+		background-color: rgba($color: s.$c-base, $alpha: 0.8);
+		transition: all 0.4s ease;
+		cursor: pointer;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 36px;
+		font-weight: bold;
+		color: s.$c-body;
+	}
+
+	&__modal {
+		position: fixed;
+		display: flex;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		border: none;
+		opacity: 0;
+		z-index: -1;
+	}
+	&__mask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($color: s.$c-base-right, $alpha: 0.7);
+	}
+	&__window {
+		width: 80vw;
+		max-width: 1000px;
+		// height: 80vh;
+		margin: auto;
+		padding: 14px;
+		background: s.$c-base;
+		z-index: 1;
+		overflow-y: hidden;
+	}
+	&__dl {
+		color: s.$c-body;
+		font-size: 1.4rem;
+		text-align: center;
+		margin: 0 auto;
+		width: 100%;
+		height: 80%;
+		h3 {
+			font-weight: bold;
+			margin-top: 10px;
+		}
+	}
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 16px;
+		color: s.$c-base-right;
+		font-size: 1.8rem;
+		cursor: pointer;
+		&:hover {
+			color: s.$c-base;
+			transition: all 0.5s;
+		}
+	}
+	&__modal.is_open {
+		animation: modal_open 0.5s ease forwards;
+	}
+	&__modal.is_open .p-work__window {
+		animation: window_open 0.5s ease forwards;
+	}
+	&__modal.is_close {
+		animation: modal_close 0.5s ease forwards;
+	}
+	&__modal.is_close .p-work__window {
+		animation: window_close 0.5s ease forwards;
+	}
+
+	@keyframes modal_open {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+			z-index: 300;
+		}
+	}
+	@keyframes window_open {
+		0% {
+			opacity: 0;
+			transform: translateY(-30px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	@keyframes modal_close {
+		0% {
+			z-index: 300;
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes window_close {
+		0% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(-30px);
+			opacity: 0;
+		}
+	}
+
+	@include s.breakpoint(tablet) {
+		&__list {
+			flex: 0 0 30%;
+		}
+		&__dl {
+			width: 80%;
+		}
+	}
+	@include s.breakpoint(pc) {
+	}
+}
