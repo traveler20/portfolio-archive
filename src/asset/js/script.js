@@ -98,7 +98,7 @@ for (let i = 0; i < array_skill.length; i++) {
 	// 複製したskill要素にデータを挿入
 	skill_content.querySelector(
 		".js-skill_icon"
-	).src = `https://traveler20.site/portfolio/asset/img/skill/icon-${array_skill[i].skill_icon}.svg`;
+	).src = `https://traveler20.site/archive/202111/asset/img/skill/icon-${array_skill[i].skill_icon}.svg`;
 	skill_content.querySelector(".js-skill_rate").dataset.rate =
 		array_skill[i].skill_rate;
 	skill_content.querySelector(".js-skill_dt").textContent =
@@ -149,7 +149,7 @@ for (let i = 0; i < array_feature.length; i++) {
 	// 複製したfeature要素にデータを挿入
 	feature_content.querySelector(
 		".js-feature_img"
-	).src = `https://traveler20.site/portfolio/asset/img/feature/feature${array_feature[i].feature_img}.webp`;
+	).src = `https://traveler20.site/archive/202111/asset/img/feature/feature${array_feature[i].feature_img}.webp`;
 	feature_content.querySelector(".js-feature_title").textContent =
 		array_feature[i].feature_title;
 	feature_content.querySelector(".js-feature_link").href =
@@ -187,7 +187,7 @@ const array_work1 = [
 		work_figcaption: "ホームページ",
 		work_modalTitle: "個人事業主用に制作したホームページ",
 		work_modalSkill: "HTML/CSS/SCSS/JavaScript/WordPress",
-		work_modalLink: "https://traveler20.site",
+		work_modalLink: "https://traveler20.site/archive/202201/",
 		work_modalLinkText: "Webサイト",
 	},
 	{
@@ -223,7 +223,7 @@ const array_work1 = [
 		work_figcaption: "ポートフォリオ",
 		work_modalTitle: "ポートフォリオサイト",
 		work_modalSkill: "HTML/CSS/SCSS/JavaScript",
-		work_modalLink: "https://traveler20.site/portfolio",
+		work_modalLink: "https://traveler20.site/archive/202111",
 		work_modalLinkText: "Webサイト",
 	},
 	{
@@ -344,12 +344,12 @@ for (let i = 0; i < array_work1.length; i++) {
 	).dataset.modal = `modal-${array_work1[i].work_modal}`;
 	work_content1.querySelector(
 		".js-work_img"
-	).src = `https://traveler20.site/portfolio/asset/img/work/${array_work1[i].work_img}.webp`;
+	).src = `https://traveler20.site/archive/202111/asset/img/work/${array_work1[i].work_img}.webp`;
 	work_content1.querySelector(".js-work_figcaption").innerHTML =
 		array_work1[i].work_figcaption;
 	work_content1.querySelector(
 		".js-work_modalImg"
-	).src = `https://traveler20.site/portfolio/asset/img/work/${array_work1[i].work_img}.webp`;
+	).src = `https://traveler20.site/archive/202111/asset/img/work/${array_work1[i].work_img}.webp`;
 	work_content1.querySelector(".js-work_modalTitle").textContent =
 		array_work1[i].work_modalTitle;
 	work_content1.querySelector(".js-work_modalSkill").textContent =
@@ -520,12 +520,12 @@ for (let i = 0; i < array_work2.length; i++) {
 	).dataset.modal = `modal-${array_work2[i].work_modal}`;
 	work_content2.querySelector(
 		".js-work_img"
-	).src = `https://traveler20.site/portfolio/asset/img/work/${array_work2[i].work_img}.webp`;
+	).src = `https://traveler20.site/archive/202111/asset/img/work/${array_work2[i].work_img}.webp`;
 	work_content2.querySelector(".js-work_figcaption").innerHTML =
 		array_work2[i].work_figcaption;
 	work_content2.querySelector(
 		".js-work_modalImg"
-	).src = `https://traveler20.site/portfolio/asset/img/work/${array_work2[i].work_img}.webp`;
+	).src = `https://traveler20.site/archive/202111/asset/img/work/${array_work2[i].work_img}.webp`;
 	work_content2.querySelector(".js-work_modalTitle").textContent =
 		array_work2[i].work_modalTitle;
 	work_content2.querySelector(".js-work_modalSkill").textContent =
@@ -703,12 +703,12 @@ for (let i = 0; i < array_work3.length; i++) {
 	).dataset.modal = `modal-${array_work3[i].work_modal}`;
 	work_content3.querySelector(
 		".js-work_img"
-	).src = `https://traveler20.site/portfolio/asset/img/work/${array_work3[i].work_img}.webp`;
+	).src = `https://traveler20.site/archive/202111/asset/img/work/${array_work3[i].work_img}.webp`;
 	work_content3.querySelector(".js-work_figcaption").innerHTML =
 		array_work3[i].work_figcaption;
 	work_content3.querySelector(
 		".js-work_modalImg"
-	).src = `https://traveler20.site/portfolio/asset/img/work/${array_work3[i].work_img}.webp`;
+	).src = `https://traveler20.site/archive/202111/asset/img/work/${array_work3[i].work_img}.webp`;
 	work_content3.querySelector(".js-work_modalTitle").textContent =
 		array_work3[i].work_modalTitle;
 	work_content3.querySelector(".js-work_modalSkill").textContent =

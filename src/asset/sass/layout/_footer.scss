@@ -21,11 +21,22 @@
 	// }
 	&__inner {
 		background: s.$c-base-dark;
-		padding: 30px;
+		padding: 40px 30px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	&__link {
+		color: s.$c-base-right;
+		&:after {
+			background-color: s.$c-base-right;
+		}
 	}
 	&__copy {
 		color: s.$c-base-right;
-		font-size: 12px;
+		// font-size: 12px;
 	}
 
 	@include s.breakpoint(tablet) {
